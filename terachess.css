@@ -1,0 +1,138 @@
+*{
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+html, body{
+  width: 100%;
+  height: 100%;
+}
+
+.terachess{
+  width: 768px;
+  height: 768px;
+  margin: 0 auto;
+}
+.terachess_cell{
+  width: 48px;
+  height: 48px;
+  float: left;
+  background-size: cover;
+  box-sizing: border-box;
+
+
+}
+
+.white{
+  background-color: #999;
+}
+.black{
+  background-color: #666;
+}
+.select{
+  background-color: #99f;
+}
+.white.able{
+  background-color: #f99;
+}
+.black.able{
+  background-color: #f66;
+}
+
+.CP, .GR, .BW, .CN, .RH{
+  transform: rotateY(180deg);
+}
+div[class*=v]{
+  transform: rotateY(180deg);
+}
+.vCP, .vGR, .vBW, .vCN, .vRH{
+  transform: rotateY(0deg) !important;
+}
+
+.UN{background-image: url(images/amazon-w.png)}
+.GR{background-image: url(images/anka-w.png)}
+.AN{background-image: url(images/antelope-w.png)}
+.B{background-image: url(images/bishop-w.png)}
+.BW{background-image: url(images/bow-w.png)}
+.BF{background-image: url(images/buffalo-w.png)}
+.BL{background-image: url(images/bull-w.png)}
+.CM{background-image: url(images/camel-w.png)}
+.CN{background-image: url(images/cannon-w.png)}
+.CD{background-image: url(images/cardinal-w.png)}
+.CP{background-image: url(images/corporal-w.png)}
+.EL{background-image: url(images/elephant-w.png)}
+.K{background-image: url(images/king-w.png)}
+.N{background-image: url(images/knight-w.png)}
+.LN{background-image: url(images/lion-w.png)}
+.MC{background-image: url(images/machine-w.png)}
+.MS{background-image: url(images/marshall-w.png)}
+.P{background-image: url(images/pawn-w.png)}
+.PR{background-image: url(images/prince-w.png)}
+.Q{background-image: url(images/queendame-w.png)}
+.RH{background-image: url(images/rhino-w.png)}
+.R{background-image: url(images/rook-w.png)}
+.SH{background-image: url(images/ship-w.png)}
+.ST{background-image: url(images/star-w.png)}
+.vUN{background-image: url(images/amazon-b.png)}
+.vGR{background-image: url(images/anka-b.png)}
+.vAN{background-image: url(images/antelope-b.png)}
+.vB{background-image: url(images/bishop-b.png)}
+.vBW{background-image: url(images/bow-b.png)}
+.vBF{background-image: url(images/buffalo-b.png)}
+.vBL{background-image: url(images/bull-b.png)}
+.vCM{background-image: url(images/camel-b.png)}
+.vCN{background-image: url(images/cannon-b.png)}
+.vCD{background-image: url(images/cardinal-b.png)}
+.vCP{background-image: url(images/corporal-b.png)}
+.vEL{background-image: url(images/elephant-b.png)}
+.vK{background-image: url(images/king-b.png)}
+.vN{background-image: url(images/knight-b.png)}
+.vLN{background-image: url(images/lion-b.png)}
+.vMC{background-image: url(images/machine-b.png)}
+.vMS{background-image: url(images/marshall-b.png)}
+.vP{background-image: url(images/pawn-b.png)}
+.vPR{background-image: url(images/prince-b.png)}
+.vQ{background-image: url(images/queendame-b.png)}
+.vRH{background-image: url(images/rhino-b.png)}
+.vR{background-image: url(images/rook-b.png)}
+.vSH{background-image: url(images/ship-b.png)}
+.vST{background-image: url(images/star-b.png)}
+
+.KG, .MK, .vKG, .vMK{
+  writing-mode: vertical-rl;
+  text-align: center;
+  font-size: 20px;
+  font-family: cursive;
+}
+.KG, .MK{
+  transform: rotateZ(-90deg);
+}
+.vKG, .vMK{
+  transform: rotateZ(90deg) !important;
+}
+.KG::after{
+  content: '鉤行';
+  display: block;
+  position: relative;
+  right: 14px;
+  color: white;
+}
+.vKG::after{
+  content: '鉤行';
+  display: block;
+  position: relative;
+  right: 14px;
+}
+.MK::after{
+  content: '摩羯';
+  display: block;
+  position: relative;
+  right: 14px;
+  color: white;
+}
+.vMK::after{
+  content: '摩羯';
+  display: block;
+  position: relative;
+  right: 14px;
+}
