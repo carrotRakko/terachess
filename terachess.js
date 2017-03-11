@@ -269,7 +269,56 @@ $(function(){
           break;
         }
       break;
+      // case 'run':
+      //   switch(move.value.length){
+      //     case 0:
+      //       return [];
+      //     break;
+      //     default:
+      //       var head = _.head(move.value);
+      //       var target = {col: start.col + head.col, row: start.row + head.row};
+      //       var run;
+      //       if(isOnBoard(target.col, target.row) && isAlly(target.col, target.row)){
+      //         run = [];
+      //       } else if(isOnBoard(target.col, target.row) && isEnemy(target.col, target.row)){
+      //         run = [target];
+      //       } else if(isOnBoard(target.col, target.row) && isEmpty(target.col, target.row)){
+      //         run = _.concat(
+      //           [target],
+      //           compile({
+      //             type: 'run',
+      //             value: [head]
+      //           }, color, target)
+      //         );
+      //       } else{
+      //         run = [];
+      //       }
+      //       return _.concat(
+      //         run,
+      //         compile({
+      //           type: 'run',
+      //           value: _.tail(move.value)
+      //         }, color, start)
+      //       );
+      //     break;
+      //   }
+      // break;
       case 'run':
+        return compile({
+          type: 'parallel',
+          value: [
+            {
+              type: 'run_only_capture',
+              value: move.value
+            },
+            {
+              type: 'run_without_capture',
+              value: move.value
+            }
+          ]
+        }, color, start);
+      break;
+      case 'run_only_capture':
         switch(move.value.length){
           case 0:
             return [];
@@ -284,9 +333,9 @@ $(function(){
               run = [target];
             } else if(isOnBoard(target.col, target.row) && isEmpty(target.col, target.row)){
               run = _.concat(
-                [target],
+                [],
                 compile({
-                  type: 'run',
+                  type: 'run_only_capture',
                   value: [head]
                 }, color, target)
               );
@@ -296,7 +345,41 @@ $(function(){
             return _.concat(
               run,
               compile({
-                type: 'run',
+                type: 'run_only_capture',
+                value: _.tail(move.value)
+              }, color, start)
+            );
+          break;
+        }
+      break;
+      case 'run_without_capture':
+        switch(move.value.length){
+          case 0:
+            return [];
+          break;
+          default:
+            var head = _.head(move.value);
+            var target = {col: start.col + head.col, row: start.row + head.row};
+            var run;
+            if(isOnBoard(target.col, target.row) && isAlly(target.col, target.row)){
+              run = [];
+            } else if(isOnBoard(target.col, target.row) && isEnemy(target.col, target.row)){
+              run = [];
+            } else if(isOnBoard(target.col, target.row) && isEmpty(target.col, target.row)){
+              run = _.concat(
+                [target],
+                compile({
+                  type: 'run_without_capture',
+                  value: [head]
+                }, color, target)
+              );
+            } else{
+              run = [];
+            }
+            return _.concat(
+              run,
+              compile({
+                type: 'run_without_capture',
                 value: _.tail(move.value)
               }, color, start)
             );
