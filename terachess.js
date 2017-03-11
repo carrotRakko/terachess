@@ -219,6 +219,21 @@ $(function(){
         return ret;
       break;
       case 'jump':
+        return compile({
+          type: 'parallel',
+          value: [
+            {
+              type: 'jump_with_capture',
+              value: move.value
+            },
+            {
+              type: 'jump_without_capture',
+              value: move.value
+            }
+          ]
+        }, color, start);
+      break;
+      case 'jump_with_capture':
         switch(move.value.length){
           case 0:
             return [];
@@ -227,9 +242,27 @@ $(function(){
             var head = _.head(move.value);
             var target = {col: start.col + head.col, row: start.row + head.row};
             return _.concat(
-              isOnBoard(target.col, target.row) && (isEnemy(target.col, target.row) || isEmpty(target.col, target.row)) ? [target] : [],
+              isOnBoard(target.col, target.row) && isEnemy(target.col, target.row) ? [target] : [],
               compile({
-                type: 'jump',
+                type: 'jump_with_capture',
+                value: _.tail(move.value)
+              }, color, start)
+            );
+          break;
+        }
+      break;
+      case 'jump_without_capture':
+        switch(move.value.length){
+          case 0:
+            return [];
+          break;
+          default:
+            var head = _.head(move.value);
+            var target = {col: start.col + head.col, row: start.row + head.row};
+            return _.concat(
+              isOnBoard(target.col, target.row) && isEmpty(target.col, target.row) ? [target] : [],
+              compile({
+                type: 'jump_without_capture',
                 value: _.tail(move.value)
               }, color, start)
             );

@@ -5,7 +5,7 @@ var WHITE = {
   P :  0, CP:  1, K :  2, PR:  3, EL:  4, MC:  5,
   N :  6, CM:  7, BL:  8, LN:  9, BF: 10, AN: 11,
   B : 12, R : 13, Q : 14, BW: 15, CN: 16, ST: 17,
-  SH: 18, GR: 19, RH: 20, CD: 21, MS: 22, UN: 23, KG: -1, MK: -2
+  SH: 18, GR: 19, RH: 20, CD: 21, MS: 22, UN: 23 //, KG: -1, MK: -2
 };
 var INVERTWHITE = _.invert(WHITE);
 
@@ -14,7 +14,7 @@ var BLACK = {
   P : 24, CP: 25, K : 26, PR: 27, EL: 28, MC: 29,
   N : 30, CM: 31, BL: 32, LN: 33, BF: 34, AN: 35,
   B : 36, R : 37, Q : 38, BW: 39, CN: 40, ST: 41,
-  SH: 42, GR: 43, RH: 44, CD: 45, MS: 46, UN: 47, KG: 48, MK: 49
+  SH: 42, GR: 43, RH: 44, CD: 45, MS: 46, UN: 47 // KG: 48, MK: 49
 };
 var INVERTBLACK = _.invert(BLACK);
 
