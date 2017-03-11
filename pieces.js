@@ -18,42 +18,42 @@ var BLACK = {
 };
 var INVERTBLACK = _.invert(BLACK);
 
-// var DEFAULT = [
-//   [35, 25, 28, 24, null, null, null, null, null, null, null, null,  0,  4,  1, 11],
-//   [31, 25, 29, 24, null, null, null, null, null, null, null, null,  0,  5,  1,  7],
-//   [39, 25, 37, 24, null, null, null, null, null, null, null, null,  0, 13,  1, 15],
-//   [32, 25, 30, 24, null, null, null, null, null, null, null, null,  0,  6,  1,  8],
-//   [40, 25, 36, 24, null, null, null, null, null, null, null, null,  0, 12,  1, 16],
-//   [45, 25, 42, 24, null, null, null, null, null, null, null, null,  0, 18,  1, 21],
-//   [46, 25, 27, 24, null, null, null, null, null, null, null, null,  0,  3,  1, 22],
-//   [47, 43, 26, 24, null, null, null, null, null, null, null, null,  0,  2, 19, 23],
-//   [41, 33, 38, 24, null, null, null, null, null, null, null, null,  0, 14,  9, 17],
-//   [44, 25, 27, 24, null, null, null, null, null, null, null, null,  0,  3,  1, 20],
-//   [34, 25, 42, 24, null, null, null, null, null, null, null, null,  0, 18,  1, 10],
-//   [40, 25, 36, 24, null, null, null, null, null, null, null, null,  0, 12,  1, 16],
-//   [32, 25, 30, 24, null, null, null, null, null, null, null, null,  0,  6,  1,  8],
-//   [39, 25, 37, 24, null, null, null, null, null, null, null, null,  0, 13,  1, 15],
-//   [31, 25, 29, 24, null, null, null, null, null, null, null, null,  0,  5,  1,  7],
-//   [35, 25, 28, 24, null, null, null, null, null, null, null, null,  0,  4,  1, 11],
-// ];
 var DEFAULT = [
   [35, 25, 28, 24, null, null, null, null, null, null, null, null,  0,  4,  1, 11],
   [31, 25, 29, 24, null, null, null, null, null, null, null, null,  0,  5,  1,  7],
-  [39, 25, 37, 24, null, null, null, null, null,   49, null, null,  0, 13,  1, 15],
+  [39, 25, 37, 24, null, null, null, null, null, null, null, null,  0, 13,  1, 15],
   [32, 25, 30, 24, null, null, null, null, null, null, null, null,  0,  6,  1,  8],
-  [40, 25, 36, 24, null, null,   48, null, null, null, null, null,  0, 12,  1, 16],
+  [40, 25, 36, 24, null, null, null, null, null, null, null, null,  0, 12,  1, 16],
   [45, 25, 42, 24, null, null, null, null, null, null, null, null,  0, 18,  1, 21],
   [46, 25, 27, 24, null, null, null, null, null, null, null, null,  0,  3,  1, 22],
   [47, 43, 26, 24, null, null, null, null, null, null, null, null,  0,  2, 19, 23],
   [41, 33, 38, 24, null, null, null, null, null, null, null, null,  0, 14,  9, 17],
   [44, 25, 27, 24, null, null, null, null, null, null, null, null,  0,  3,  1, 20],
   [34, 25, 42, 24, null, null, null, null, null, null, null, null,  0, 18,  1, 10],
-  [40, 25, 36, 24, null, null, null, null, null,   -1, null, null,  0, 12,  1, 16],
+  [40, 25, 36, 24, null, null, null, null, null, null, null, null,  0, 12,  1, 16],
   [32, 25, 30, 24, null, null, null, null, null, null, null, null,  0,  6,  1,  8],
-  [39, 25, 37, 24, null, null,   -2, null, null, null, null, null,  0, 13,  1, 15],
+  [39, 25, 37, 24, null, null, null, null, null, null, null, null,  0, 13,  1, 15],
   [31, 25, 29, 24, null, null, null, null, null, null, null, null,  0,  5,  1,  7],
   [35, 25, 28, 24, null, null, null, null, null, null, null, null,  0,  4,  1, 11],
 ];
+// var DEFAULT = [
+//   [35, 25, 28, 24, null, null, null, null, null, null, null, null,  0,  4,  1, 11],
+//   [31, 25, 29, 24, null, null, null, null, null, null, null, null,  0,  5,  1,  7],
+//   [39, 25, 37, 24, null, null, null, null, null,   49, null, null,  0, 13,  1, 15],
+//   [32, 25, 30, 24, null, null, null, null, null, null, null, null,  0,  6,  1,  8],
+//   [40, 25, 36, 24, null, null,   48, null, null, null, null, null,  0, 12,  1, 16],
+//   [45, 25, 42, 24, null, null, null, null, null, null, null, null,  0, 18,  1, 21],
+//   [46, 25, 27, 24, null, null, null, null, null, null, null, null,  0,  3,  1, 22],
+//   [47, 43, 26, 24, null, null, null, null, null, null, null, null,  0,  2, 19, 23],
+//   [41, 33, 38, 24, null, null, null, null, null, null, null, null,  0, 14,  9, 17],
+//   [44, 25, 27, 24, null, null, null, null, null, null, null, null,  0,  3,  1, 20],
+//   [34, 25, 42, 24, null, null, null, null, null, null, null, null,  0, 18,  1, 10],
+//   [40, 25, 36, 24, null, null, null, null, null,   -1, null, null,  0, 12,  1, 16],
+//   [32, 25, 30, 24, null, null, null, null, null, null, null, null,  0,  6,  1,  8],
+//   [39, 25, 37, 24, null, null,   -2, null, null, null, null, null,  0, 13,  1, 15],
+//   [31, 25, 29, 24, null, null, null, null, null, null, null, null,  0,  5,  1,  7],
+//   [35, 25, 28, 24, null, null, null, null, null, null, null, null,  0,  4,  1, 11],
+// ];
 
 // ここから下まで MOVE
 var MOVE = {};
