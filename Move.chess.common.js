@@ -1,7 +1,10 @@
 // 標準チェスの動きファイル
 // 依存ファイルはない
+
+var Move = Move || {};
+
 (function(){
-  var Move = Move || {};
+
   Move.chess = Move.chess || {};
 
   var common = {};
@@ -17,4 +20,5 @@
   };
 
   Move.chess.common = common;
+  
 )();
