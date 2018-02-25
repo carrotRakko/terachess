@@ -1,0 +1,107 @@
+
+.board {
+  background-color: #eee;
+    display: grid;
+    grid-template-rows: 20px 1fr 20px;
+    grid-template-columns: 20px 1fr 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.board-top, .board-bottom, .board-left, .board-right {
+  width: 100%;
+  height: 100%;
+}
+
+.board-top {
+  grid-row: 1;
+  grid-column: 2;
+}
+.board-bottom {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.board-left {
+  grid-row: 2;
+  grid-column: 1;
+}
+.board-right {
+  grid-row: 2;
+  grid-column: 3;
+}
+
+.board-left > .board-rank {
+  padding-right: 2px;
+}
+.board-right > .board-rank {
+  padding-left: 2px;
+}
+
+.board-file, .board-rank {
+  box-sizing: border-box;
+  font-size: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* display: table-cell; */
+  /* vertical-align: middle; */
+}
+.board-file {
+  float: left;
+  width: 6.25%;
+  height: 100%;
+  text-align: center;
+}
+
+.board-rank {
+  width: 100%;
+  height: 6.25%;
+  text-align: center;
+}
+
+.board-inner {
+    grid-row: 2;
+    grid-column: 2;
+    width: 100%;
+    height: 100%;
+}
+
+.board-cell {
+    float: left;
+    width: 6.25%;
+    height: 6.25%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.board-cell:hover {
+    opacity: 0.9;
+}
+
+.board-cell:active {
+    opacity: 0.5;
+}
+
+.board-cell.black {
+    background-color: #666;
+}
+
+.board-cell.white {
+    background-color: #999;
+}
+
+.board-cell.white.selected {
+    background-color: #77f;
+}
+.board-cell.black.selected {
+    background-color: #66f;
+}
+
+.board-cell.white.able {
+    background-color: #f99;
+}
+
+.board-cell.black.able {
+    background-color: #f66;
+}

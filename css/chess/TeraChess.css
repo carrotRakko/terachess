@@ -1,0 +1,51 @@
+
+/* 駒の背景 */
+.Un{background-image: url(../../img/amazon-w.png)}
+.Gr{background-image: url(../../img/anka-w.png)}
+.An{background-image: url(../../img/antelope-w.png)}
+.B{background-image: url(../../img/bishop-w.png)}
+.Bw{background-image: url(../../img/bow-w.png)}
+.Bf{background-image: url(../../img/buffalo-w.png)}
+.Bl{background-image: url(../../img/bull-w.png)}
+.Cm{background-image: url(../../img/camel-w.png)}
+.Cn{background-image: url(../../img/cannon-w.png)}
+.Cd{background-image: url(../../img/cardinal-w.png)}
+.Cp{background-image: url(../../img/corporal-w.png)}
+.El{background-image: url(../../img/elephant-w.png)}
+.K{background-image: url(../../img/king-w.png)}
+.N{background-image: url(../../img/knight-w.png)}
+.Ln, .Ln2{background-image: url(../../img/lion-w.png)}
+.Mc{background-image: url(../../img/machine-w.png)}
+.Ms{background-image: url(../../img/marshall-w.png)}
+.P{background-image: url(../../img/pawn-w.png)}
+.Pr{background-image: url(../../img/prince-w.png)}
+.Q{background-image: url(../../img/queendame-w.png)}
+.Rh{background-image: url(../../img/rhino-w.png)}
+.R{background-image: url(../../img/rook-w.png)}
+.Sh{background-image: url(../../img/ship-w.png)}
+.St{background-image: url(../../img/star-w.png)}
+
+.vUn{background-image: url(../../img/amazon-b.png)}
+.vGr{background-image: url(../../img/anka-b.png)}
+.vAn{background-image: url(../../img/antelope-b.png)}
+.vB{background-image: url(../../img/bishop-b.png)}
+.vBw{background-image: url(../../img/bow-b.png)}
+.vBf{background-image: url(../../img/buffalo-b.png)}
+.vBl{background-image: url(../../img/bull-b.png)}
+.vCm{background-image: url(../../img/camel-b.png)}
+.vCn{background-image: url(../../img/cannon-b.png)}
+.vCd{background-image: url(../../img/cardinal-b.png)}
+.vCp{background-image: url(../../img/corporal-b.png)}
+.vEl{background-image: url(../../img/elephant-b.png)}
+.vK{background-image: url(../../img/king-b.png)}
+.vN{background-image: url(../../img/knight-b.png)}
+.vLn, .vLn2{background-image: url(../../img/lion-b.png)}
+.vMc{background-image: url(../../img/machine-b.png)}
+.vMs{background-image: url(../../img/marshall-b.png)}
+.vP{background-image: url(../../img/pawn-b.png)}
+.vPr{background-image: url(../../img/prince-b.png)}
+.vQ{background-image: url(../../img/queendame-b.png)}
+.vRh{background-image: url(../../img/rhino-b.png)}
+.vR{background-image: url(../../img/rook-b.png)}
+.vSh{background-image: url(../../img/ship-b.png)}
+.vSt{background-image: url(../../img/star-b.png)}
