@@ -3,8 +3,8 @@
 
 使われることを想定しているファイル
 /creative.default.html, /creative.plain.html: chromeで開く事ができるファイル。
-/readme: このファイル。読むべし。
-/sample/: .stateファイルが入っているのでロードしてみるべし。プログラムの機能としての「ロード」である。
+/readme: このファイル。
+/sample/: .stateファイルが入っている。
 
 コンソール
 アンパッサンの座標を表示
